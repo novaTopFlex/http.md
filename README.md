@@ -1,8 +1,8 @@
 # HTTP Status Codes
 ## 1xx: Loading
 ### 100 Continue
-So far, everything is OK; client should continue with the request or ignore the request if already finished. For the server to check the request headers, the client must send "Expect: 100-continue" as a header in the initial request and receive "100 Continue" in response prior to sending the respective body. 
-Compatible with Firefox: Yes
+So far, everything is OK; client should continue with the request or ignore the request if already finished. For the server to check the request headers, the client must send "Expect: 100-continue" as a header in the initial request and receive "100 Continue" in response prior to sending the respective body.  
+Compatible with Firefox: Yes  
 Compatible with Chromium: Yes
 ### 101 Switching Protocols
 The server must switch to another protocol. The protocol is to be specified in the "Upgrade" request header from the client. The server is to include the "Upgrade" response header for indication of the new protocol.
